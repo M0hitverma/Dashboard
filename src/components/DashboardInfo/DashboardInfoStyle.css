@@ -1,0 +1,235 @@
+.dashboardinfo-div{
+    width:100%;
+ padding-top: 1rem;
+    display: flex;
+    flex-direction: column; 
+
+}
+.dashboardinfo-heading{
+    padding-top:1rem 0;
+}
+.dashboard{
+
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap:2rem;
+    
+}
+.dashboard-left{
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+    width: 55%;
+
+}
+
+
+
+.dashboard-left-top{
+    display: flex;
+    flex-direction: row;
+    gap:2rem;
+    justify-content: space-between;
+}
+.dashboard-left-top>:nth-child(1){
+    background-color: #ffe3d4;
+    border-color: #ffa071;
+}
+.dashboard-left-top>:nth-child(2){
+    background-color: #b5d1f8ba;
+    border-color: #75afffba;
+}
+.dashboard-left-top>:nth-child(3){
+    background-color: #fbbbedb1;
+    border-color: hsla(313, 100%, 74%, 0.694);
+}
+
+.dashboard-left-middle{
+    width: 100%;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+
+}
+
+
+.top-card{
+    width: 30%;
+ display: flex;
+ flex-direction: column;
+ gap:0.4rem;
+ padding:1rem;
+ border-radius:10px;
+ border:1px solid;
+}
+.middle-card{
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    gap:0.4rem;
+    padding:1rem;
+    border-radius:7px;
+    border:1px solid rgba(201, 201, 201, 0.81);
+}
+.dashboard-left-bottom{
+
+    width: 100%;
+    border: 1px solid rgba(201, 201, 201, 0.81);
+
+    border-radius: 10px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+}
+
+.dashboard-left-bottom-heading{
+    width: 92%;
+    display: flex;
+    padding-top:1rem;
+    flex-direction: row;
+    
+    justify-content: space-between;
+}
+.dashboard-left-bottom-heading2{
+   border:1px solid black;
+   padding: 3px;
+   border-radius: 4px;
+   font-size:0.7rem;
+   font-weight: 500;
+  color: gray;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap:4px;
+}
+
+
+.dashboard-left-bottom-card{
+    width: 90%;
+    border: 1px solid rgb(198, 198, 198);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:5px 10px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+}
+.announcement{
+    width: 100%;
+    border-top: 1px solid rgba(201, 201, 201, 0.81);
+  padding:7px;
+  
+    color:red;
+    text-align: center;
+
+}
+.dashboard-right{
+    border-radius: 10px;
+ width: 35%;
+
+ display: flex;
+ flex-direction: column;
+ gap:2rem;
+ overflow: hidden;
+}
+
+.dashboard-right-top{
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color:white;
+   
+    background-color: #1B204A;
+}
+
+.dashboard-right-top>:nth-child(1){
+    padding: 0.6rem 1.7rem;
+    background-color: #212657;
+    font-size: 1.2rem;
+}
+.dashboard-right-top>:nth-child(2){
+    padding: 1rem 1.7rem;
+    display: flex;
+    flex-direction: column;
+    gap:0.5rem;
+}
+.dashboard-right-top>:nth-child(2)>:nth-child(1){
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: rgb(206, 205, 205);
+}
+.dashboard-right-top>:nth-child(2)>:nth-child(2){
+    font-size: 1.4rem;
+}
+.dashboard-right-top>:nth-child(2)>:nth-child(3){
+    font-size: 0.9rem;
+    color: rgb(206, 205, 205);
+}
+.dashboard-right-top>:nth-child(3){
+    padding: 1rem 1.7rem ;
+    display: flex;
+    flex-direction: row;
+   justify-content: space-between;
+}
+.dashboard-right-top>:nth-child(3)>:nth-child(1){
+    font-size: 0.8rem;
+}
+.dashboard-right-top>:nth-child(3)>:nth-child(2){
+     font-size: 0.8rem;
+     background-color: rgb(250, 69, 69);
+     padding: 10px;
+     border-radius: 10px;
+}
+.dashboard-right-bottom{
+    display: flex;
+    flex-direction:column;
+    border: 1px solid rgba(201, 201, 201, 0.81);
+    align-items: center;
+    border-radius: 10px;
+    gap:1rem;
+}
+@media (max-width:768px) {
+    .dashboard{
+        flex-direction: column;
+        align-items: center;
+    }
+    .dashboard-left{
+        width: 85%;
+    }
+    .dashboard-right{
+        width: 85%;
+    }
+    .dashboardinfo-heading{
+       width: 85%;
+       margin: auto;
+    }
+}
+@media (max-width:412px) {
+    .dashboard-left{
+        width: 90%;
+    }
+    .dashboard-left-top{
+        flex-direction: column;
+        width: 100%;
+    }
+    .top-card{
+        width: 100%;
+    }
+    .dashboard-left-middle{
+        flex-direction: column;
+        width: 100%;
+        gap:1rem;
+    }
+    .middle-card{
+        width: 100%;
+    }
+    .dashboard-right{
+        width: 95%;
+    }
+    
+}
